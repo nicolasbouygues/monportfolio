@@ -1,10 +1,12 @@
 <h1>My projects</h1>
 
 <% @projects.each do |project|  %>
-<p><%= link_to project.title, project_path(project) %></p>
-<p><% project.technologies.each do |technology| %></p>
-<p><%= technology %></p>
+    <h2><%= link_to project.title, project_path(project) %></h2>
+    <%= cl_image_tag("https://res.cloudinary.com/duw19l0ns/image/upload/v1583178061/gHAdqx44jaPxsWZtwfx78bqa.jpg", width: 400, height: 300, crop: :fill) %>
+    <p><% project.technologies.each do |technology| %></p>
+        <p><%= technology %></p>
+    <%end  %>
 <%end  %>
-<%end  %>
+
 
 
