@@ -12,3 +12,12 @@
 @import "components/index";
 @import "pages/index";
 @import "pages/projects/index";
+
+.container {
+  width: 1080px;
+  background-color: white;
+}
+
+.body {
+  background-color: white !important;
+}
