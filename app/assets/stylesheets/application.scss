@@ -4,7 +4,6 @@
 @import "config/bootstrap_variables";
 
 // External libraries
-@import "bootstrap/scss/bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
@@ -16,8 +15,9 @@
 .container {
   width: 1080px;
   background-color: white;
+  margin: auto;
 }
 
 .body {
-  background-color: white !important;
+
 }

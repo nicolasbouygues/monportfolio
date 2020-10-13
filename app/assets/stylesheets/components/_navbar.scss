@@ -4,6 +4,11 @@
   display: flex;
   margin-top: 20px;
   margin-bottom: 20px;
+  font-family: 'Lato', sans-serif;
+}
+
+.navbar-myportfolio {
+  font-size: 20px;
 }
 
 .navbar-myportfolio .navbar-collapse {
@@ -15,16 +20,18 @@
 }
 
 .square-logo {
+  display: flex;
   width: 50px;
   height: 50px;
   border: 3px solid black;
-  text-align: center;
-  padding-top: 9px;
+  justify-content: center;
+  align-items: center;
   margin-left: 250px;
 }
 
 .square-logo .home-link {
-  color: black
+  color: black;
+  text-decoration: none;
 }
 
 .square-logo .home-link:hover {
@@ -38,15 +45,15 @@
   justify-content: space-between;
 }
 
-.menu .item-1 {
+.menu a {
+  color: black;
+  text-decoration: none;
+}
+
+.menu .item {
   margin-left: 20px;
 }
 
-.menu .item-2 {
-  margin-left: 20px;
+.item.active {
+  color: blue;
 }
-
-.menu .item-3 {
-  margin-left: 20px;
-}
-
