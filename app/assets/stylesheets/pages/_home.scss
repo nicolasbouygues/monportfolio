@@ -31,9 +31,19 @@ h4 {
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 20px;
   text-align: center;
+  margin-bottom: 80px;
 }
 
 .avantage img {
   height: 250px;
   width: 250px;
+}
+
+hr {
+    border: none;
+    opacity: 20%;
+    height: 1px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
 }
