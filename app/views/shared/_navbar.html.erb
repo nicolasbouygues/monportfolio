@@ -1,16 +1,22 @@
 <div class="navbar-myportfolio">
-    <div class="square-logo">
-      <%= link_to "NB", root_path, class: "home-link"  %>
-    </div>
-    <div class="menu">
-      <div class="item">
-        <%= link_to "Home", root_path  %>
-      </div>
-      <div class="item">
-        <%= link_to "Projects" , projects_path  %>
-      </div>
-      <div class="item">
-        <%= link_to "Contact me", contact_path  %>
-      </div>
-    </div>
+  <div class="square-logo">
+    <%= link_to "NB", root_path, class: "home-link"  %>
+  </div>
+  <nav>
+    <ul>
+      <li><%= link_to "Home", root_path %></li>
+      <li><%= link_to "Projects" , projects_path  %></li>
+      <li><%= link_to "Contact me", contact_path  %></li>
+    </ul>
+  </nav>
 </div>
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script>
+    $(function(){
+        $('a').each(function(){
+            if ($(this).prop('href') == window.location.href) {
+                $(this).addClass('active'); $(this).parents('li').addClass('active');
+            }
+        });
+    });
+</script>
