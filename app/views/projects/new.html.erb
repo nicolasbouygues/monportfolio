@@ -1,0 +1,13 @@
+<%= form_for(@project) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+  <%= f.label :technologies %>
+  <%= f.text_field :technologies %>
+  <%= f.label :creation_date %>
+  <%= f.date_field :creation_date %>
+  <%= f.file_field :photos, as: :file, input_html: { multiple: true } %>
+  <%= f.submit %>
+<% end %>
+<%= link_to "Liste des projets", projects_path  %>
