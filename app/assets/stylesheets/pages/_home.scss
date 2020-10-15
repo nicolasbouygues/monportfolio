@@ -31,12 +31,16 @@ h4 {
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 20px;
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 115px;
+}
+
+.avantage {
+  background-color: #F3F3F3;
 }
 
 .avantage img {
-  height: 250px;
-  width: 250px;
+  height: 206px;
+  width: 140px;
 }
 
 hr {
@@ -46,4 +50,62 @@ hr {
     /* Set the hr color */
     color: #333; /* old IE */
     background-color: #333; /* Modern Browsers */
+}
+
+.title-projets-home-center {
+  text-align: center;
+  margin: 60px;
+}
+
+.card-projet-home {
+  text-align: center;
+  min-width: 409px !important;
+  max-width: 409px;
+}
+
+.projets-home-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.description-projet-homepage {
+  text-align: justify;
+  text-align-last: center;
+  padding-left: 30px;
+}
+
+.description-projet-homepage h2 {
+  text-align-last: left;
+}
+
+.logo {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  background-color: #F3F3F3;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.projets-home-page {
+  padding: 15px;
+  background-color: #F3F3F3;
+  flex-basis: contain;
+  max-width: 100%;
+  margin-left: 40px;
+}
+
+.projets-home-page img {
+  max-width: 100%;
+}
+
+#logo-le-pere-brouette {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+#logo-le-pere-brouette img {
+  width: 80%;
 }
