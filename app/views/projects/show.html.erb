@@ -2,8 +2,31 @@
 <h2><%= @project.title %></h2>
 <p><%= @project.description %></p>
 </div>
+</div>
 <div class="projets-features">
+  <div class="projet-col-gauche">
+    <div class="bouton-classic">
+      <a href="www.foodies-health.live">Voir le site</a>
+    </div>
+    <div class="projet-responsabilité">
+      <h4>Responsabilités</h4>
+      <ul>
+        <li>Ruby</li>
+        <li>JavaScript ES6</li>
+        <li>API Stripe</li>
+        <li>CSS</li>
+        <li>HTML.erb</li>
+      </ul>
+    </div>
+  </div>
+  <div class="projet-role">
+    Foodies est un projet auquel j'ai collaboré lors de ma formation au Wagon. Nous étions une équipe de 3 personnes, et nous avons développé le
+    site en deux semaines.
+  </div>
 
+  <div class="projet-image">
+    <img src="https://res.cloudinary.com/duw19l0ns/image/upload/v1602750120/Portfolio/Foodies_homepage.png" alt="Foodies homepage">
+  </div>
 </div>
 <hr>
 <%= link_to 'Retour aux projets', projects_path %>

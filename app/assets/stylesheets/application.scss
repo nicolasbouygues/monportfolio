@@ -26,3 +26,19 @@ a {
 .body {
   width: 100%;
 }
+
+.bouton-classic {
+  max-width: 259px;
+  max-height: 50px;
+  background-color: #e2aa50;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.bouton-classic a {
+  color: white;
+  font-weight: 700;
+  font-size: 25px;
+}
