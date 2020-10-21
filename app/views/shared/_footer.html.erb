@@ -1,0 +1,44 @@
+<div class="footer-bar"></div>
+
+<div class="footer">
+  <div class="profile">
+    <div class="avatar">
+      <%= cl_image_tag("https://res.cloudinary.com/duw19l0ns/image/upload/v1603284899/Portfolio/Nicolas_Bouygues_ct5bmr.png") %>
+    </div>
+    <div class="profile-description">
+      I am a Front-end Developer with 12 years commercial experience, author of CSS3 Foundations,
+      and graduate of Internet Technology. I create successful websites that are fast, easy to use,
+      and built with best practices.
+    </div>
+    <div class="profile-name">
+      Nicolas Bouygues <br>
+      Junior Fullstack Developer
+    </div>
+  </div>
+  <div class="social-networks">
+    <div class="linkedin">
+        <a href="https://www.linkedin.com/in/nicolas-bouygues-4a204298/" target="_blank">LINKEDIN <i class="fab fa-linkedin"></i></a>
+    </div>
+    <div class="github">
+        <a href="https://github.com/nicolasbouygues" target="_blank">GITHUB <i class="fab fa-github"></i></a>
+    </div>
+  </div>
+  <div class="navigator">
+    <div class="footer-link">
+      <%= link_to "Accueil", root_path  %>
+      <p>Retour à l'accueil</p>
+    </div>
+    <div class="footer-link">
+      <%= link_to "Projets", projects_path  %>
+      <p>En savoir plus sur mes projets</p>
+    </div>
+    <div class="footer-link">
+      <%= link_to "A Propos", root_path  %>
+      <p>A propos de mon parcours</p>
+    </div>
+    <div class="footer-link">
+      <%= link_to "Contact", contact_path  %>
+      <p>Restons en contact!</p>
+    </div>
+  </div>
+</div>
