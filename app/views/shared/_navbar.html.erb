@@ -1,9 +1,7 @@
 <div class="navbar-myportfolio">
-  <div class="square-logo">
-    <%= link_to "NB", root_path, class: "home-link"  %>
-  </div>
+    <%= link_to "NB", root_path, class: "square-logo"  %>
   <nav>
-    <ul>
+    <ul class="link_jquery">
       <li><%= link_to "Home", root_path %></li>
       <li><%= link_to "Projects" , projects_path  %></li>
       <li><%= link_to "Contact me", contact_path  %></li>
@@ -13,7 +11,7 @@
 <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script>
     $(function(){
-        $('a').each(function(){
+        $('.link_jquery a').each(function(){
             if ($(this).prop('href') == window.location.href) {
                 $(this).addClass('active'); $(this).parents('li').addClass('active');
             }
