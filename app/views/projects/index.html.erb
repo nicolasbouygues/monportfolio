@@ -1,10 +1,42 @@
-<h1>My projects</h1>
-<div class="projects-index">
-  <% @projects.each do |project| %>
-  <%= link_to project.title, project_path(project) %>
-  <% project.photos.attached? %>
-      <% project.photos.each do |photo| %>
-      <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
-  <% end %>
-  <% end %>
+<div class="header-align-center">
+  <h1 class="title-center">
+    Mon Portfolio
+  </h1>
+  <h4 class="description-center">
+    Voici les différents projets auxquels j'ai participés.
+    <br>
+     Ce sont des sites pour lesquels j'ai développé à la fois le back-end et le front-end.
+  </h4>
+</div>
+
+</div>
+<div class="projets-home">
+  <div class="projets-home-cards">
+    <div class="card-projet-home">
+        <div class="logo">
+          <%= link_to cl_image_tag("https://res.cloudinary.com/duw19l0ns/image/upload/v1602765365/Portfolio/logofoodies_ht9o7w.png"), project_path(1) %>
+        </div>
+        <div class="description-projet-homepage">
+          <h2><%= link_to "> Foodies",project_path(1)  %></h2>
+          <p>J'ai été le développeur du back-end de Foodies, sur toute la partie gestion des commandes, des recettes, du panier et du paiement sur Stripe. J'ai également géré le Front-end du site sur l'ensemble des pages, en collaboration avec une équipe de 2 personnes.</p>
+        </div>
+    </div>
+    <div class="projets-home-page">
+      <%= link_to cl_image_tag("https://res.cloudinary.com/duw19l0ns/image/upload/v1602750120/Portfolio/Foodies_homepage.png"), project_path(1)  %>
+    </div>
+  </div>
+    <div class="projets-home-cards">
+    <div class="card-projet-home">
+        <div id="logo-le-pere-brouette">
+          <%= link_to cl_image_tag("https://res.cloudinary.com/duw19l0ns/image/upload/v1602765817/Portfolio/le_père_brouette_logo_d39vpb.png"), project_path(3) %>
+        </div>
+        <div class="description-projet-homepage">
+          <h2><%= link_to "> Foodies",project_path(3)  %></h2>
+          <p>J'ai été le développeur du back-end de Foodies, sur toute la partie gestion des commandes, des recettes, du panier et du paiement sur Stripe. J'ai également géré le Front-end du site sur l'ensemble des pages, en collaboration avec une équipe de 2 personnes.</p>
+        </div>
+    </div>
+    <div class="projets-home-page">
+      <%= link_to cl_image_tag("https://res.cloudinary.com/duw19l0ns/image/upload/v1602750647/Portfolio/Le_Père_Brouette_Homepage_ygcrzb.jpg"), project_path(3)  %>
+    </div>
+  </div>
 </div>
