@@ -8,13 +8,17 @@
 
 
 users = User.create({name: 'Nicolas Bouygues', email: 'bouygues.nicolas@gmail.com'})
+
 foodies_description = 'Un projet créé lors de ma formation au Wagon.'
 foodies_url = 'http://www.foodies-health.live'
 foodies_homepage = 'https://res.cloudinary.com/duw19l0ns/image/upload/v1602750120/Portfolio/Foodies_homepage.png'
 foodies = Project.create!({adresseweb: foodies_url, title: 'Foodies', technologies: ['Ruby', 'Ruby on Rails', 'Javascript ES6', 'HTML', 'CSS'], description: foodies_description, creation_date: '13/03/2020', homepage: foodies_homepage})
 
-video_agregateur_description = "Projet créé afin de monter en compétences sur React."
-video_agregateur = Project.create!({title: 'Agrégateur de vidéos', technologies: ['React.JS', 'JSX', 'HTML', 'CSS'], description: video_agregateur_description, creation_date: '20/09/2020'})
+
+vidag_url = 'http://vidag.herokuapp.com'
+vidag_homepage = 'https://res.cloudinary.com/duw19l0ns/image/upload/v1603442850/Portfolio/vidag_homepage_vpgaol.png'
+vidag_description = "Projet créé afin de monter en compétences sur React."
+vidag = Project.create!({adresseweb: vidag_url, title: 'Vidag', technologies: ['React.JS', 'JSX', 'HTML', 'CSS'],homepage: vidag_homepage, description: vidag_description, creation_date: '20/09/2020'})
 
 
 brouette_description = 'Un projet créé lors de ma formation au Wagon.'

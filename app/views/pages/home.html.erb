@@ -51,6 +51,20 @@
       <%= link_to cl_image_tag("https://res.cloudinary.com/duw19l0ns/image/upload/v1602750120/Portfolio/Foodies_homepage.png"), project_path(1)  %>
     </div>
   </div>
+  <div class="projets-home-cards">
+    <div class="card-projet-home">
+        <div class="logo">
+          <%= link_to cl_image_tag("https://res.cloudinary.com/duw19l0ns/image/upload/v1602765365/Portfolio/logofoodies_ht9o7w.png"), project_path(1) %>
+        </div>
+        <div class="description-projet-homepage">
+          <h2><%= link_to "> Vidag",project_path(2)  %></h2>
+          <p>J'ai été le développeur du back-end de Foodies, sur toute la partie gestion des commandes, des recettes, du panier et du paiement sur Stripe. J'ai également géré le Front-end du site sur l'ensemble des pages, en collaboration avec une équipe de 2 personnes.</p>
+        </div>
+    </div>
+    <div class="projets-home-page">
+      <%= link_to cl_image_tag(@projects[1].homepage), project_path(2)  %>
+    </div>
+</div>
     <div class="projets-home-cards">
     <div class="card-projet-home">
         <div id="logo-le-pere-brouette">
