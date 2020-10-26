@@ -1,0 +1,25 @@
+.contact_form .field {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.contact_form .field input {
+  width: 100%;
+  border-width: 1px;
+}
+
+.contact_form .field textarea {
+  width: 100%;
+  border-width: 1px;
+}
+
+.contact_form input[type="submit"]{
+  width: 259px;
+  background-color: #e2aa50;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  max-height: 60px;
+  margin-bottom: 40px;
+}

@@ -1,10 +1,25 @@
-<%= form_for(@contact) do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-  <%= f.label :email %>
-  <%= f.text_field :email %>
-  <%= f.label :message %>
-  <%= f.text_field :message %>
-  <%= f.submit %>
-<% end %>
+<div class="header-show">
+<h2>Restons en contact</h2>
+<p>N'hésitez pas à m'envoyer un message concernant votre projet et je reviendrai vers vous dès que possible.</p>
+</div>
+
+<div class="contact-area">
+  <div class="formulaire-contact">
+    <%= form_for(@contact, :html => {:class => "contact_form"}) do |f| %>
+      <div class="field">
+        <%= f.label :Nom_et_prénom %> <br>
+        <%= f.text_field :name %>
+      </div>
+      <div class="field">
+        <%= f.label :email %> <br>
+        <%= f.text_field :email %>
+      </div>
+      <div class="field">
+        <%= f.label :Votre_message %> <br>
+        <%= f.text_area :message %>
+      </div>
+        <%= f.submit "Envoyer votre message"%>
+    <% end %>
+  </div>
+</div>
 
