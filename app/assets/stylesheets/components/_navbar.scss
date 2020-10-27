@@ -29,6 +29,11 @@
   margin-left: 300px;
 }
 
+.square-logo:hover {
+  transform: rotate(360deg);
+  transition: all 0.8s ease-in-out 0s;
+}
+
 .square-logo .home-link {
   color: black;
   text-decoration: none;
@@ -62,5 +67,9 @@ nav a {
 nav ul li {
   margin-left: 20px;
   list-style-type: none;
+}
+
+nav ul li:hover {
+  font-weight: bold;
 }
 
