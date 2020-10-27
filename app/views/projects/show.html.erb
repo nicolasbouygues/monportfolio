@@ -21,28 +21,29 @@
     Foodies est un projet auquel j'ai collaboré lors de ma formation au Wagon. Nous étions une équipe de 3 personnes, et nous avons développé le
     site en deux semaines.
   </div>
-  <div class="projet-deroule">
-    <div class="role">
-      <h4>Mon rôle dans le projet</h4>
-      <p> <%= @project.projet_role %> </p>
-    </div>
-    <div class="debut">
-      <h4>Le début du projet</h4>
-      <p> <%= @project.projet_debut %> </p>
-    </div>
-    <div class="back">
-      <h4>Le back-end</h4>
-      <p> <%= @project.projet_back %> </p>
-    </div>
-    <div class="front">
-      <h4>Le front-end</h4>
-      <p> <%= @project.projet_front %> </p>
-    </div>
+<div class="projet-image">
+  <img src="<%= @project.homepage %>" alt="Foodies homepage">
+</div>
+</div>
+<div class="projet-deroule">
+  <div class="role">
+    <h4>Mon rôle dans le projet</h4>
+    <p> <%= @project.projet_role %> </p>
   </div>
-  <div class="projet-image">
-    <img src="<%= @project.homepage %>" alt="Foodies homepage">
+  <div class="role">
+    <h4>Le début du projet</h4>
+    <p> <%= @project.projet_debut %> </p>
+  </div>
+  <div class="role">
+    <h4>Le back-end</h4>
+    <p> <%= @project.projet_back %> </p>
+  </div>
+  <div class="role">
+    <h4>Le front-end</h4>
+    <p> <%= @project.projet_front %> </p>
   </div>
 </div>
+
 
 
 

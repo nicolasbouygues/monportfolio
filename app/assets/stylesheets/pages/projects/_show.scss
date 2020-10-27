@@ -21,7 +21,7 @@
 .projets-features {
   margin-left: 50px;
   display: grid;
-  grid-template-columns: 15% 85%;
+  grid-template-columns: 15% 80% 5%;
   grid-template-rows: 50px 30% 50%;
   grid-row-gap: 20px;
 }
@@ -59,9 +59,23 @@
   grid-column-start: 2;
   grid-row-start: 1;
   grid-row-end: 1;
+
 }
 
 .projet-deroule {
-  grid-column-start: 2;
-  grid-row-start: 3;
+  max-width: 1200px;
+  margin: 0 auto 50px 20%;
+}
+
+.projet-deroule .role p {
+  text-align: justify;
+  font-size: 18px;
+}
+
+.projet-deroule .role h4 {
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  color: var(--color-font);
+  font-weight: bold;
+  letter-spacing: 2px;
 }
