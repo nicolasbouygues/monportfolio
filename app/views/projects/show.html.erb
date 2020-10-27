@@ -10,25 +10,39 @@
     </div>
     <div class="projet-responsabilité">
       <h4>Responsabilités</h4>
+      <% @project.technologies.each do |techno|  %>
       <ul>
-        <li>Ruby</li>
-        <li>JavaScript ES6</li>
-        <li>API Stripe</li>
-        <li>CSS</li>
-        <li>HTML.erb</li>
+        <li><%= techno %></li>
       </ul>
+      <% end %>
     </div>
   </div>
   <div class="projet-role">
     Foodies est un projet auquel j'ai collaboré lors de ma formation au Wagon. Nous étions une équipe de 3 personnes, et nous avons développé le
     site en deux semaines.
   </div>
-
+  <div class="projet-deroule">
+    <div class="role">
+      <h4>Mon rôle dans le projet</h4>
+      <p> <%= @project.projet_role %> </p>
+    </div>
+    <div class="debut">
+      <h4>Le début du projet</h4>
+      <p> <%= @project.projet_debut %> </p>
+    </div>
+    <div class="back">
+      <h4>Le back-end</h4>
+      <p> <%= @project.projet_back %> </p>
+    </div>
+    <div class="front">
+      <h4>Le front-end</h4>
+      <p> <%= @project.projet_front %> </p>
+    </div>
+  </div>
   <div class="projet-image">
     <img src="<%= @project.homepage %>" alt="Foodies homepage">
   </div>
 </div>
-<hr>
-<%= link_to 'Retour aux projets', projects_path %>
-<%= link_to "Retour", :back  %>
+
+
 
