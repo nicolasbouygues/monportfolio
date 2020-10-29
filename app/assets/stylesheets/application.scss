@@ -36,7 +36,7 @@ p, h1, h2, h3, h4, h5, a{
 .bouton-classic {
   max-width: 259px;
   max-height: 50px;
-  background-color: #e2aa50;
+  background-color: #f2c14e;
   cursor: pointer;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -47,6 +47,11 @@ p, h1, h2, h3, h4, h5, a{
   color: white;
   font-weight: 700;
   font-size: 25px;
+}
+
+.bouton-classic:hover {
+  transition-duration: 0.5s;
+  background-color: #e2aa50;
 }
 
 textarea {

@@ -25,6 +25,7 @@ require("channels")
 import "bootstrap";
 
 // Internal imports, e.g:
+import "../plugins/movingLetters.js"
 
 // import { initSelect2 } from '../components/init_select2';
 
