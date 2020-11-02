@@ -25,6 +25,13 @@ anime.timeline({loop: true})
     duration: 600,
     offset: '-=600'
   }).add({
+    targets: '.ml5 .letters-middle',
+    opacity: [0,1],
+    translateX: ["-0.5em", 0],
+    easing: "easeOutExpo",
+    duration: 2000,
+    offset: '-=600'
+  }).add({
     targets: '.ml5',
     opacity: 0,
     duration: 1000000000,

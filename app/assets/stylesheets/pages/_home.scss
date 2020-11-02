@@ -5,6 +5,10 @@
   margin-bottom: 80px;
 }
 
+.bottom-80 {
+  margin-bottom: 80px;
+}
+
 .center {
   text-align: center;
 }
@@ -38,6 +42,10 @@
   margin-bottom: 115px;
 }
 
+h5 {
+  font-weight: bold;
+}
+
 .avantage {
   background-color: #F3F3F3;
 }
@@ -65,6 +73,7 @@ hr {
   text-align: center;
   min-width: 409px !important;
   max-width: 409px;
+  padding-left: 30px;
 }
 
 .projets-home-cards {
@@ -75,18 +84,28 @@ hr {
 
 .description-projet-homepage {
   text-align: justify;
-  text-align-last: center;
-  padding-left: 30px;
 }
 
 .description-projet-homepage h2 {
-  text-align-last: left;
+  display: inline-block;
+  margin-bottom: 0px;
+  border-bottom: 2px solid #e2aa50;
+  border-bottom-style: ridge;
+}
+
+.description-projet-homepage h2:hover {
+  border-bottom: none;
 }
 
 .logo {
   padding-top: 45px;
   padding-bottom: 45px;
   background-color: #F3F3F3;
+}
+
+.logo-vidag img {
+  background-color: none;
+  width: 409px;
 }
 
 .logo img {
