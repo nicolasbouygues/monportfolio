@@ -121,7 +121,7 @@ Rails.application.configure do
     domain: 'gmail.com',
     authentication: 'plain',
     enable_starttls_auto: true,
-    user_name: ENV['GMAIL_USERNAME'],
+    user_name: 'bouygues.nicolas@gmail.com',
     password: ENV['GMAIL_PASSWORD'],
     enable_starttls_auto: true
   }
