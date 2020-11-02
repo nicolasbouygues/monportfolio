@@ -3,12 +3,16 @@ class ContactController < ApplicationController
     @contact = Contact.new
   end
 
+  def show
+  end
+
   def create
     @contact = Contact.new(contact_params)
-    if @contact.deliver
-      redirect_to contacts_path, notice: "Thank you for your message !"
-    else
-      render json: @contact.errors
+      if @contact.deliver
+        flash[:notice] = "Message sent"
+        redirect_to contacts_path
+      else
+        render :new
     end
   end
 

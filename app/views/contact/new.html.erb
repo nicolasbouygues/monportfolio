@@ -11,22 +11,10 @@
 </div>
 
 <div class="contact-area">
-  <div class="formulaire-contact">
-    <%= form_for(@contact, :html => {:class => "contact_form"}) do |f| %>
-      <div class="field">
-        <%= f.label :Nom_et_prénom %> <br>
-        <%= f.text_field :name %>
-      </div>
-      <div class="field">
-        <%= f.label :email %> <br>
-        <%= f.text_field :email %>
-      </div>
-      <div class="field">
-        <%= f.label :Votre_message %> <br>
-        <%= f.text_area :message %>
-      </div>
-        <%= f.submit "Envoyer votre message"%>
-    <% end %>
-  </div>
+  <% if flash[:notice] %>
+    <%= window.alert("Hello") %>
+  <% end %>
+
+  <%= render '/shared/contact.html.erb' %>
 </div>
 
