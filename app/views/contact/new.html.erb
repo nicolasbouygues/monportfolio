@@ -10,13 +10,15 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 </div>
 
-<div class="contact-area">
-  <% if flash[:notice] %>
-  <script>
-    Notiflix.Notify.Success('Success message text');
-  </script>
+
+<% if flash[:notice] %>
+    <div class="success-notice"></div>
+    <%= render '/shared/contact.html.erb' %>
+    <% else %>
+    <div class="failure-notice"></div>
+    <%= render '/shared/contact.html.erb' %>
 <% end %>
 
-  <%= render '/shared/contact.html.erb' %>
-</div>
+
+
 
