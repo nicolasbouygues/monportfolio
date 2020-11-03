@@ -67,3 +67,34 @@
 .social-networks a:hover {
   color: #b7d1da;
 }
+
+
+@media screen and (max-width: 768px) {
+  .profile {
+    margin-top: 0px;
+    margin-left: 0px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+  }
+
+  .footer {
+    display: block;
+  }
+
+  .profile img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .social-networks {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    padding-top: 0px;
+  }
+
+  .navigator {
+    display: none;
+  }
+}
