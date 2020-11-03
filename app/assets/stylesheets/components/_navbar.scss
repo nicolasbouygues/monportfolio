@@ -1,14 +1,32 @@
 .navbar-myportfolio {
+  max-width: 100%;
   justify-content: space-between;
   background: white;
   display: flex;
   margin-top: 20px;
+  margin-left: 15%;
+  margin-right: 10em;
   margin-bottom: 20px;
   font-family: 'Lato', sans-serif;
+  color: #e2aa50;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 24px;
+  display: none;
 }
 
 .navbar-myportfolio {
   font-size: 20px;
+}
+
+.navbar-myportfolio a {
+  color: #e2aa50;
+  font-weight: bold;
 }
 
 .navbar-myportfolio .navbar-collapse {
@@ -23,10 +41,9 @@
   display: flex;
   width: 50px;
   height: 50px;
-  border: 3px solid black;
+  border: 3px solid #e2aa50;
   justify-content: center;
   align-items: center;
-  margin-left: 300px;
 }
 
 .square-logo:hover {
@@ -35,7 +52,7 @@
 }
 
 .square-logo .home-link {
-  color: black;
+  color: #e2aa50;
   text-decoration: none;
 }
 
@@ -46,7 +63,6 @@
 nav {
   margin-top: -15px;
   position: sticky;
-  margin-right: 300px;
   justify-content: space-between;
 }
 
@@ -57,6 +73,11 @@ nav ul {
 nav a {
   color: black;
   text-decoration: none;
+}
+
+.active-navbar {
+  display: block;
+  background-color: #FFFFFF;
 }
 
 .active {
@@ -73,3 +94,18 @@ nav ul li:hover {
   font-weight: bold;
 }
 
+@media screen and (max-width: 768px) {
+
+   .navbar-toggle {
+     display: block;
+  }
+
+  nav ul {
+    display: none;
+    list-style-type: none;
+  }
+
+  .navbar-myportfolio {
+  margin: 20px 0px;
+}
+}

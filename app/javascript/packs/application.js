@@ -27,6 +27,7 @@ import "bootstrap";
 // Internal imports, e.g:
 import "../plugins/movingLetters.js"
 import "../plugins/notifications.js"
+import "../plugins/burger.js"
 
 // import { initSelect2 } from '../components/init_select2';
 

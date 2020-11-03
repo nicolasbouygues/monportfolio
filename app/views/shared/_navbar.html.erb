@@ -1,18 +1,22 @@
 <div class="navbar-myportfolio">
     <%= link_to "NB", root_path, class: "square-logo"  %>
   <nav>
-    <ul class="link_jquery">
+  <span class="navbar-toggle" id="js-navbar-toggle">
+      <i class="fas fa-bars"></i>
+  </span>
+    <ul id="link_jquery">
       <li><%= link_to "Home", root_path %></li>
       <li><%= link_to "Projects" , projects_path  %></li>
       <li><%= link_to "Contact me", contact_index_path  %></li>
       <li><%= link_to "A propos", about_path %></li>
     </ul>
+
   </nav>
 </div>
 <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script>
     $(function(){
-        $('.link_jquery a').each(function(){
+        $('#link_jquery a').each(function(){
             if ($(this).prop('href') == window.location.href) {
                 $(this).addClass('active'); $(this).parents('li').addClass('active');
             }
