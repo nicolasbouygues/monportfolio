@@ -12,8 +12,10 @@
 
 <div class="contact-area">
   <% if flash[:notice] %>
-    <%= window.alert("Hello") %>
-  <% end %>
+  <script>
+    Notiflix.Notify.Success('Success message text');
+  </script>
+<% end %>
 
   <%= render '/shared/contact.html.erb' %>
 </div>

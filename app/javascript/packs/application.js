@@ -23,6 +23,7 @@ require("channels")
 
 // External imports
 import "bootstrap";
+import Notiflix from "notiflix";
 
 // Internal imports, e.g:
 import "../plugins/movingLetters.js"
