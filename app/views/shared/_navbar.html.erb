@@ -1,9 +1,19 @@
 <div class="navbar-myportfolio">
     <%= link_to "NB", root_path, class: "square-logo"  %>
   <nav>
-  <span class="navbar-toggle" id="js-navbar-toggle">
+  <div class="navbar-toggle" id="js-navbar-toggle">
       <i class="fas fa-bars"></i>
-  </span>
+  </div>
+    <div class="header-smart-nav">
+        <div class="social-networks">
+      <div class="linkedin">
+          <a href="https://www.linkedin.com/in/nicolas-bouygues-4a204298/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <div class="github">
+          <a href="https://github.com/nicolasbouygues" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </div>
     <ul id="link_jquery">
       <li><%= link_to "Home", root_path %></li>
       <li><%= link_to "Projects" , projects_path  %></li>

@@ -18,11 +18,16 @@ a {
   text-decoration: none;
 }
 
+.ov-hidden {
+  overflow: hidden;
+}
+
 .container {
   max-width: 100%;
   width: 1080px;
   background-color: white;
-  margin: auto;
+  margin: 6em auto 2em auto;
+  position: relative;
 }
 
 p, a{

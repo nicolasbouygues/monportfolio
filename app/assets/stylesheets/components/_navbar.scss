@@ -1,23 +1,41 @@
 .navbar-myportfolio {
-  max-width: 100%;
-  justify-content: space-between;
+  position: absolute;
+  top: 20px;
+  width: 98%;
   background: white;
-  display: flex;
-  margin-top: 20px;
-  margin-left: 15%;
-  margin-right: 10em;
-  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   font-family: 'Lato', sans-serif;
   color: #e2aa50;
 }
 
+.header-smart-nav {
+  display: none;
+  border-bottom: 1px solid #F3F3F3;
+}
+
+.visible {
+  display: block;
+}
+
+.header-smart-nav .social-networks {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+}
+
+.header-smart-nav .social-networks a:hover {
+  color: #b7d1da;
+}
+
+.header-smart-nav .social-networks .linkedin {
+  margin-right: 20px;
+}
+
 .navbar-toggle {
-  position: absolute;
-  top: 30px;
-  right: 20px;
   cursor: pointer;
   font-size: 24px;
-  display: none;
+  visibility: hidden;
 }
 
 .navbar-myportfolio {
@@ -38,6 +56,7 @@
 }
 
 .square-logo {
+  justify-self: start;
   display: flex;
   width: 50px;
   height: 50px;
@@ -61,13 +80,13 @@
 }
 
 nav {
-  margin-top: -15px;
-  position: sticky;
-  justify-content: space-between;
+  margin: -13px;
+  justify-self: end;
 }
 
 nav ul {
   display: flex;
+  margin: auto;
 }
 
 nav a {
@@ -75,14 +94,38 @@ nav a {
   text-decoration: none;
 }
 
+.activated {
+  background-color: #F9F9F9;
+}
+
 .active-navbar {
   display: block;
-  background-color: #FFFFFF;
+  height: 100vh;
+  width: 250px;
+  background-color: #F9F9F9;
+  padding-top: 20px;
+}
+
+nav ul li {
+  margin-bottom: 10px;
+}
+
+.active-navbar a:hover {
+  color: #b7d1da;
+  font-weight: bold;
+}
+
+:not(.navbar-myportfolio .reduced) {
+  opacity: 0.5;
 }
 
 .active {
   text-decoration: underline;
   font-weight: bold;
+}
+
+.disappear {
+  display: none;
 }
 
 nav ul li {
@@ -97,7 +140,12 @@ nav ul li:hover {
 @media screen and (max-width: 768px) {
 
    .navbar-toggle {
-     display: block;
+    visibility: visible;
+  }
+
+
+  .navbar-myportfolio {
+    z-index: 1;
   }
 
   nav ul {
@@ -105,7 +153,7 @@ nav ul li:hover {
     list-style-type: none;
   }
 
-  .navbar-myportfolio {
-  margin: 20px 0px;
-}
+  nav {
+    margin: 13px;
+  }
 }
