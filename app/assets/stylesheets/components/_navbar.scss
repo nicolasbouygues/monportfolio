@@ -106,6 +106,14 @@ nav a {
   padding-top: 20px;
 }
 
+.transform {
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
 nav ul li {
   margin-bottom: 10px;
 }
@@ -113,10 +121,6 @@ nav ul li {
 .active-navbar a:hover {
   color: #b7d1da;
   font-weight: bold;
-}
-
-:not(.navbar-myportfolio .reduced) {
-  opacity: 0.5;
 }
 
 .active {

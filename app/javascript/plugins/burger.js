@@ -6,6 +6,7 @@ let socialBar = document.querySelector('.header-smart-nav');
 let navBar = document.querySelector('.navbar-myportfolio');
 navBarToggle.addEventListener('click', function () {
     mainNav.classList.toggle('active-navbar');
+    mainNav.classList.add('transform')
     burgerMenu.classList.toggle('disappear');
     body.classList.toggle('ov-hidden')
     socialBar.classList.toggle('visible')
