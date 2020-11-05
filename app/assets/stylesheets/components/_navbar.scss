@@ -14,6 +14,14 @@
   border-bottom: 1px solid #F3F3F3;
 }
 
+#x-nav {
+  cursor: pointer;
+  position: absolute;
+  top: 0.8vh;
+  right: 2vh;
+  font-size: 40px;
+}
+
 .visible {
   display: block;
 }
@@ -100,18 +108,10 @@ nav a {
 
 .active-navbar {
   display: block;
-  height: 100vh;
-  width: 250px;
   background-color: #F9F9F9;
   padding-top: 20px;
-}
-
-.transform {
-  -webkit-transition: all 2s ease;
-  -moz-transition: all 2s ease;
-  -o-transition: all 2s ease;
-  -ms-transition: all 2s ease;
-  transition: all 2s ease;
+  height: 100vh;
+  width: 250px;
 }
 
 nav ul li {
@@ -140,6 +140,12 @@ nav ul li {
 nav ul li:hover {
   font-weight: bold;
 }
+
+.appear {
+  visibility: visible;
+}
+
+
 
 @media screen and (max-width: 768px) {
 
