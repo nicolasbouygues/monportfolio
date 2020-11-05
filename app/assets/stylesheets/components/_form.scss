@@ -14,12 +14,25 @@
 }
 
 .contact_form input[type="submit"]{
-  width: 259px;
-  background-color: #e2aa50;
+  max-width: 259px;
+  max-height: 50px;
+  background-color: #f2c14e;
   cursor: pointer;
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
-  max-height: 60px;
-  margin-bottom: 40px;
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+.contact_form input[value="Envoyer votre message"] {
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+  font-family: 'Merriweather', serif;
+}
+
+.contact_form input[type="submit"]:hover {
+  transition-duration: 0.5s;
+  background-color: #e2aa50;
 }
