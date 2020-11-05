@@ -1,5 +1,5 @@
 import toastr from 'toastr';
-import 'toastr/build/toastr.min.css'
+import 'toastr/build/toastr.min.css';
 
 toastr.options = {
   "closeButton": true,
