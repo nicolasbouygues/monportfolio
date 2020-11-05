@@ -21,8 +21,6 @@
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
-  margin-right: 20%;
-  margin-left: 20%;
 }
 
 .contact_form input[value="Envoyer votre message"] {
@@ -35,4 +33,16 @@
 .contact_form input[type="submit"]:hover {
   transition-duration: 0.5s;
   background-color: #e2aa50;
+}
+
+@media screen and (max-width: 768px) {
+  .contact_form input[type="submit"] {
+    margin-left: 25%;
+    margin-right: 20%;
+  }
+
+  .contact_form input[type="submit"]:hover {
+  transition-duration: 0.5s;
+  background-color: #e2aa50;
+}
 }
