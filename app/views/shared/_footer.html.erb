@@ -23,19 +23,19 @@
   </div>
   <div class="navigator">
     <div class="footer-link">
-      <%= link_to "Accueil", root_path  %>
+      <%= link_to "Accueil", root_path, data: { turbolinks: false }  %>
       <p>Retour à l'accueil</p>
     </div>
     <div class="footer-link">
-      <%= link_to "Projets", projects_path  %>
+      <%= link_to "Projets", projects_path, data: { turbolinks: false }  %>
       <p>En savoir plus sur mes projets</p>
     </div>
     <div class="footer-link">
-      <%= link_to "A Propos", root_path  %>
+      <%= link_to "A Propos", about_path, data: { turbolinks: false } %>
       <p>A propos de mon parcours</p>
     </div>
     <div class="footer-link">
-      <%= link_to "Contact", contact_index_path  %>
+      <%= link_to "Contact", contact_index_path, data: { turbolinks: false }  %>
       <p>Restons en contact!</p>
     </div>
   </div>
