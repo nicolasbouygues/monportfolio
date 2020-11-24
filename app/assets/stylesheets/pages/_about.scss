@@ -24,6 +24,17 @@
   text-align: right;
 }
 
+.titre-about {
+  display: flex;
+  justify-content: space-between;
+}
+
+.line {
+  width: 20em;
+  height: 70px;
+  border-bottom: 1px solid #e2aa50;
+}
+
 .parties a {
   font-weight: bold;
   text-decoration: underline;
@@ -32,6 +43,14 @@
 @media screen and (max-width: 768px) {
   .profil-deroule {
     margin-left: 0px;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .titre-about h4 {
+    width: 100%;
   }
 }
 
