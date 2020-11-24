@@ -43,19 +43,20 @@ p, a{
 }
 
 .bouton-classic {
-  max-width: 259px;
+  max-width: 175.55px;
   max-height: 50px;
   background-color: #f2c14e;
   cursor: pointer;
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
+  color: white;
+  font-size: 20px;
 }
 
 .bouton-classic a {
   color: white;
   font-weight: 700;
-  font-size: 25px;
 }
 
 .bouton-classic:hover {

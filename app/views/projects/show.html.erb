@@ -12,9 +12,9 @@
 </div>
 <div class="projets-features">
   <div class="projet-col-gauche">
-    <div class="bouton-classic">
-      <a href="<%= @project.adresseweb %>" target="_blank">Voir le site</a>
-    </div>
+    <a href="<%= @project.adresseweb %>" target="_blank">
+      <div class="bouton-classic">Voir le site</div>
+    </a>
     <div class="projet-responsabilité">
       <h4>Responsabilités</h4>
       <% @project.technologies.each do |techno|  %>
