@@ -43,8 +43,8 @@ p, a{
 }
 
 .bouton-classic {
-  max-width: 175.55px;
-  max-height: 50px;
+  width: 20vh;
+  height: 2.7vh;
   background-color: #f2c14e;
   cursor: pointer;
   padding-top: 10px;
@@ -67,4 +67,13 @@ p, a{
 textarea {
   width: 300px;
   height: 150px;
+}
+
+.block {
+  display: block;
+  margin: 0px auto 0px auto;
+}
+
+.call-to-action {
+  margin: 0px auto 20px auto;
 }
