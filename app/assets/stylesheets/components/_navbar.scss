@@ -1,12 +1,13 @@
 .navbar-myportfolio {
   position: absolute;
   top: 20px;
-  width: 97%;
+  width: 70%;
   background: white;
   display: grid;
   grid-template-columns: 1fr 1fr;
   font-family: 'Lato', sans-serif;
   color: #e2aa50;
+  margin-left: 15%;
 }
 
 .header-smart-nav {
@@ -18,7 +19,7 @@
   cursor: pointer;
   position: absolute;
   top: 0.8vh;
-  right: 2vh;
+  right: -3.5vh;
   font-size: 40px;
 }
 
@@ -88,7 +89,7 @@
 }
 
 nav {
-  margin: -13px;
+  margin-top: -13px;
   justify-self: end;
 }
 
