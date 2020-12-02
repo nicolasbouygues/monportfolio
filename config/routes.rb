@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   resources :contact, only: [:create]
   get 'contact', to: 'contact#new', as: :contacts
   get 'about', to: 'pages#about'
+  get 'meeting', to: 'pages#meeting', as: :meeting
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
