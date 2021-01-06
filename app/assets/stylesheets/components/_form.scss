@@ -1,16 +1,28 @@
 .contact_form .field {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   width: 100%;
 }
 
 .contact_form .field input {
   width: 100%;
-  border-width: 1px;
+  box-shadow: 3px 3px 10px #e2aa50;
+  border: none;
+  border-radius: 20px;
 }
 
 .contact_form .field textarea {
   width: 100%;
-  border-width: 1px;
+  box-shadow: 3px 3px 10px #e2aa50;
+  border: none;
+  border-radius: 20px;
+}
+
+.contact_form label {
+  font-family: 'Lato', sans-serif;
+}
+
+.field br {
+  margin: 20px;
 }
 
 .contact_form input[type="submit"]{
@@ -21,6 +33,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
+  border: none;
 }
 
 .contact_form input[value="Envoyer votre message"] {
